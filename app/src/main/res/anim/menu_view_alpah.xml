@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--为了好看我在这里设置了fra_menu_child_display_describe.xml 慢显 可以不要-->
+    <alpha
+        android:toAlpha="1.0"
+        android:fromAlpha="0.0"
+        android:duration="1000"
+        ></alpha>
+</set>

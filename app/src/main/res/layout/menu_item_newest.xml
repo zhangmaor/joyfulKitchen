@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--最新推荐   相关item-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/list_ra"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/menu_aa"
+        >
+        <!--android:background="@mipmap/aa"-->
+        <TextView
+            android:id="@+id/list_i_txt"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:background="#FFFAE3"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

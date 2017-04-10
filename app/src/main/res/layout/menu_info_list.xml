@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--最新推荐页面 item 中食谱食材所需-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/menuname"
+        android:layout_width="match_parent"
+        android:textColor="#AFAFAF"
+        android:layout_height="35dp"
+        android:text="asdasd"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:textColor="#AFAFAF"
+        android:layout_height="35dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="asad"/>
+</LinearLayout>

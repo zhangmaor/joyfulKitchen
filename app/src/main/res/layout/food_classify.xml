@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+   <!-- 搜索栏顶部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#996666"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <!--   禁止页面打开的时候自动打开  输入法
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+            android:src="@mipmap/menu_out_0"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="搜索"
+            android:layout_weight="1"
+            android:background="@drawable/lay_menu_top_shape"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@mipmap/menu_search_0"
+            />
+        <Button
+            android:id="@+id/roulei"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="搜索"
+            />
+    </LinearLayout>
+    <!--菜谱分类内部 肉类、豆类、......-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--scrollview可滑动控件-->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+           <include layout="@layout/food_classify_son"/>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutAnimation="@anim/menu_list_anim_layout"
+    >
+<!--    android:layoutAnimation="@anim/menu_list_anim_layout"（在上面）
+    动画 好奇怪 去掉layoutAnimation显示器（右边）就直接显示，不去掉
+    显示器（右边）是空白的，但安装是可以的。-->
+
+    <!--这里是菜谱2图文介绍-->
+
+    <!--画图（时间轴），和介绍-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <!--时间轴-->
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <!--关于垂直向下的view 轴线-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="40dp"
+                />
+           <!-- 轴标记-->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/menu_dinw_indexes"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="-5dp"
+                />
+            <!--关于垂直向下的view 轴线-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="240dp"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-4dp"
+                />
+
+
+
+        </LinearLayout>
+        <!--图文介绍-->
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@mipmap/muent_meat01"
+                   android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    />
+                <!--菜名标题介绍-->
+                <TextView
+                    android:id="@+id/describe_text_Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="宫保鸡丁"
+                    android:textSize="20dp"
+                    android:layout_marginTop="-20dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:background="#FFFFFF"
+                    />
+               <!-- 菜谱介绍文字-->
+                <TextView
+                    android:id="@+id/describe_text_introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:textSize="12dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:background="#FFFFFF"
+                    android:text="这是一道川菜中的保留家常菜，由鸡丁、干辣椒、花生米等炒制而成。"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animationOrder="random"
+    android:animation="@anim/menu_view_alpah"
+    >
+   <!-- layoutAnimation装载 view_menu_alpah动画
+    用于fra_menu_child_display_describe.xml-->
+</layoutAnimation>

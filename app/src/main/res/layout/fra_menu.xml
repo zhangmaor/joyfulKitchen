@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<!-- 这里是菜谱2-->
+
+	<!-- 搜索栏顶部-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:background="#996666"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		>
+		<!--  <  返回-->
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="@dimen/activity_horizontal_margin"
+
+			android:src="@mipmap/menu_out_0"
+			/>
+		<!--顶部输入框-->
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:hint="搜索"
+			android:layout_weight="1"
+			android:background="@drawable/menu_lay_top_shape"
+			android:layout_marginLeft="@dimen/activity_horizontal_margin"
+			android:drawableLeft="@mipmap/menu_search_0"
+			/>
+		<!-- 按钮  搜索-->
+		<Button
+			android:id="@+id/menu_btn"
+			android:layout_width="60dp"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/activity_horizontal_margin"
+			android:layout_marginLeft="@dimen/activity_horizontal_margin"
+			android:text="搜索"
+			/>
+	</LinearLayout>
+	<!-- 动态轮播图片展示-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<include layout="@layout/menu_display_carousel"/>
+	</LinearLayout>
+
+
+	<!--川菜 粤菜等等 布局-->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:orientation="horizontal"
+		android:background="@mipmap/menu_background"
+
+		>
+		<LinearLayout
+			android:layout_width="80dp"
+			android:layout_height="40dp"
+			android:orientation="horizontal"
+			>
+			<ImageView
+				android:layout_width="80dp"
+				android:layout_height="40dp"
+				android:src="@mipmap/menu_dinw"
+				android:background="#33000000"
+				/>
+		</LinearLayout>
+		<!--粤菜栏-->
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:text="粤菜"
+			android:textColor="#FFFCFC"
+			android:gravity="center"
+			android:textSize="20dp"
+			android:background="#33000000"
+			android:layout_marginLeft="2dp"
+			/>
+		<!-- 川菜栏-->
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:text="川菜"
+			android:textColor="#FFFCFC"
+			android:gravity="center"
+			android:textSize="20dp"
+			android:background="#33000000"
+			android:layout_marginLeft="2dp"
+			/>
+		<!-- 湘菜栏-->
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:text="湘菜"
+			android:textColor="#FFFCFC"
+			android:gravity="center"
+			android:textSize="20dp"
+			android:background="#33000000"
+			android:layout_marginLeft="2dp"
+			/>
+		<!--西餐栏-->
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:text="西餐"
+			android:textColor="#FFFCFC"
+			android:gravity="center"
+			android:textSize="20dp"
+			android:background="#33000000"
+			android:layout_marginLeft="2dp"
+			/>
+	</LinearLayout>
+	<!--展现菜单图片和文字描述-->
+	<ListView
+		android:id="@+id/display_listview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@mipmap/menu_joyfulkitchen_gallery001"
+		android:divider="@null"
+		>
+	</ListView>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--肉类标题 和图片-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:src="@mipmap/muent_meat"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="肉类"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+
+    <!--显示菜谱1 menu_centre.xml 子页面-->
+    <GridView
+        android:id="@+id/gview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:numColumns="auto_fit"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        >
+    </GridView>
+   <!-- 豆类标题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:src="@mipmap/muent_meat"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="豆类"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <!--显示菜谱1 menu_centre.xml 子页面-->
+    <GridView
+        android:id="@+id/gview02"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:numColumns="auto_fit"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        >
+    </GridView>
+
+    <!--青菜标题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:src="@mipmap/muent_meat"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="青菜"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <!--显示菜谱1 menu_centre.xml 子页面 -->
+    <GridView
+        android:id="@+id/gview03"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:numColumns="auto_fit"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        >
+    </GridView>
+
+    <!--烧烤标题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:src="@mipmap/muent_meat"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="烧烤"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <!--显示菜谱1 menu_centre.xml 子页面-->
+    <GridView
+        android:id="@+id/gview04"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:numColumns="auto_fit"
+        android:columnWidth="80dp"
+        android:stretchMode="columnWidth"
+        >
+    </GridView>
+</LinearLayout>
